@@ -1,0 +1,41 @@
+Name: FinalDestinatioIdentifier {
+    description: "Agent which identify the final destination according to the user given message", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "A query which helps to identify the destination which user mentioned.
+                            Give all the information which helps to get the final destination.
+                            When you give the query, give as below: Robot needs to go to a place which...."
+        }
+    }
+}
+
+Name: CurrentPositionIdentifier {
+    description: "This is the agent which gives the robot current position.", 
+    inputSchema: "Mention as 'None'"
+}
+
+Name: WaypointGenerator {
+    description: "This is the agent which gives the waypoints to the final destination. That means, this agent will give you the path you have to follow.", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "Should give one complete sentence with the robot current position(one of rooms or corridor), destination position(***one of rooms or corridor***) and also the doors which are already closed like below.
+                                - Robot currently in < mention current position here>, Robot need to go to <mention destination position here>, <doors which are closed> are closed.
+                          Therefore you have to get the final destination and also the current position of the robot in order to call this member.
+                          If info about doors haven't given, don't mention them."
+        }
+    }
+}
+
+Name: FinalNavigationalPlanner {
+    description: "This is the agent which plan the final navigational plan.",
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "should give below. Make sure you enter the ***current position, destination, waypoints, door sequence and the doors status*** you have already extracted. (door sequence is not the doors which are closed.)
+                                - Robot currently in <current position>, Robot need to go to <the destination>, <doors which are closed> are closed. The path you have to follow is <waypoints>.
+                                  The door sequence is <door sequence>."
+        }
+    }
+}

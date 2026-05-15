@@ -1,0 +1,24 @@
+Name: TopPlanner {
+    description: "This is the one who responsible for creating the task plan for the robot according to the user request.", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "The robot current position, user request, whether request is a just a ***question or navigational command***. Give it as a complete sentence."
+        }
+    }
+}
+
+Name: Speaker {
+    description: "This is the agent which has the speaker. If any detail is needed to inform to the user, robot can use this agent.", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "The details which we have to inform to the user. This should be in natural language."
+        }
+    }
+}
+
+Name: Finisher {
+    description: "This is the agent which end the tasks.", 
+    inputSchema: "Mention as 'None'"
+}

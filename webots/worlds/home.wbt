@@ -1,0 +1,581 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Fence.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Ceiling.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/VarnishedPine.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/abb/irb/protos/Irb4600-40.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/DoorLever.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Hammer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Wrench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/bathroom/protos/BathroomSink.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/chairs/protos/WoodenChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Screwdriver.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/kitchen/breakfast/protos/BiscuitBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5201610739907714 -0.5153037474243857 -0.6810980142352142 4.328731739454291
+  position 11.90089736155637 -13.43163765227387 32.85747997966487
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 0.7
+  castShadows FALSE
+}
+RectangleArena {
+  translation 11.1 -5.85 0
+  rotation 0 0 1 3.14159
+  floorSize 22.2 11.7
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+Pedestrian {
+  translation 19.3 -5.54 1.27
+  rotation 0 0 1 -3.1415853071795863
+}
+Pedestrian {
+  translation 3.5 -1.70007 1.37
+  rotation 0 0 1 -3.1415853071795863
+  name "pedestrian(1)"
+}
+Wrench {
+  translation 11.109348109979333 -7.300058995940066 0.0162661744293172
+  rotation -0.9996536856274321 -0.01857163331442708 -0.01864412099096065 1.5675429232492104
+}
+Fence {
+  translation 0.05 -11.63 0
+  rotation 0 0 1 -1.5707996938995747
+  path [
+    0 0 0
+    0 22 0
+  ]
+}
+Door {
+  hidden translation_5 0.684786349945092 0.26636953343599457 0
+  hidden rotation_5 0 0 0.9999999999999999 1.5004943727561668
+  translation 0.825 -9.6 0
+  rotation 0 0 1 1.570795613280012
+  name "door(1)"
+  size 0.3 1.05 3
+  position 1.5004943727561668
+  jointAtLeft FALSE
+  doorHandle DoorLever {
+    translation 0 0 -2.5862948291766052e-05
+  }
+}
+Door {
+  hidden translation_5 0.6150502379439942 0.34117064411440023 6.661338147750939e-16
+  hidden rotation_5 0 0 1 1.5004665656082157
+  translation 9.225 -4.575 0
+  name "door(2)"
+  size 0.15 1.05 3
+  position 1.5004943727561109
+  jointAtLeft FALSE
+  doorHandle DoorLever {
+    translation 0 0 -3.6243834104165984e-05
+  }
+}
+Door {
+  hidden translation_5 0.611577005153829 -0.3308290271484774 0
+  hidden rotation_5 0 0 -1 1.479289129617676
+  translation 14.775 -4.575 0
+  rotation 0 0 1 3.141592653589793
+  name "door(3)"
+  size 0.15 1.05 3
+  position -1.479289129617676
+  doorHandle DoorLever {
+    translation 0 0 -8.064460680490271e-05
+  }
+}
+Door {
+  hidden translation_5 0.6847863499451126 0.26636953343603775 2.220446049250313e-16
+  hidden rotation_5 0 0 1 1.5004943727562556
+  translation 15.525 -9.6 0
+  rotation 0 0 -1 -1.5707953071795862
+  name "door(4)"
+  size 0.3 1.05 3
+  position 1.5004943727562559
+  jointAtLeft FALSE
+  doorHandle DoorLever {
+    translation 0 0 -9.143929332822154e-06
+  }
+}
+Sofa {
+  translation 4.79 -1.74 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Wall {
+  translation 0.11 -5.85 0
+  name "wall(1)"
+  size 0.15 11.7 3
+}
+Wall {
+  translation 22.12 -5.85 0
+  name "wall(2)"
+  size 0.15 11.7 3
+}
+Wall {
+  translation 11.14 -0.0800003 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(3)"
+  size 0.15 22.2 3
+}
+Wall {
+  translation 0.225 -9.6 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(4)"
+  size 0.3 0.15 3
+}
+Wall {
+  translation 8.175 -9.6 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(5)"
+  size 0.3 13.65 3
+}
+Wall {
+  translation 19.05 -9.6 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(6)"
+  size 0.3 6 3
+}
+Wall {
+  translation 9.225 -7.275 0
+  name "wall(7)"
+  size 0.15 4.35 3
+}
+Wall {
+  translation 14.775 -7.275 0
+  name "wall(8)"
+  size 0.15 4.35 3
+}
+Wall {
+  translation 9.225 -3.975 0
+  name "wall(9)"
+  size 0.15 0.3 3
+}
+Wall {
+  translation 14.775 -3.975 0
+  name "wall(10)"
+  size 0.15 0.3 3
+}
+Wall {
+  translation 7.125 -2.025 0
+  name "wall(11)"
+  size 0.15 3.75 3
+}
+Wall {
+  translation 14.775 -1.965 0
+  name "wall(12)"
+  size 0.15 3.75 3
+}
+Wall {
+  translation 11.095 -2.025 0
+  name "wall(13)"
+  size 0.15 3.75 3
+}
+Wall {
+  translation 11.025 -3.825 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(14)"
+  size 0.15 7.65 3
+}
+Wall {
+  translation 3.345 -7.95 0
+  name "wall(15)"
+  size 0.15 3 3
+}
+Wall {
+  translation 6.21 -6.525 0
+  rotation 0 0 1 1.5707996938995747
+  name "wall(16)"
+  size 0.15 5.88 3
+}
+Table {
+  translation 0.6 -3.3 0
+  name "table(1)"
+  size 0.9 6.3 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 1.95 -0.6 0
+  rotation 0 0 1 1.5708003061004252
+  name "table(2)"
+  size 0.9 3.6 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 5.07 -6 0
+  rotation 0 0 1 1.5708003061004252
+  name "table(3)"
+  size 0.9 3.6 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 9.9 -7.95 0
+  name "table(6)"
+  size 1.2 3 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 12 -8.85 0
+  rotation 0 0 1 1.5707996938995747
+  name "table(7)"
+  size 1.2 3 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 14.1 -8 0
+  name "table(8)"
+  size 1.2 3 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 21 -4.8 0
+  name "table(10)"
+  size 2.1 9.3 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Table {
+  translation 18 -8.4 0
+  rotation 0 0 1 1.5707996938995747
+  name "table(11)"
+  size 2.1 3.9 0.74
+  trayAppearance VarnishedPine {
+    colorOverride 0.368 0.294 0.035
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+Irb4600-40 {
+  hidden position_0_0 0.0008500546124481029
+  hidden rotation_1 0 0 1 0.0008500546126258563
+  hidden position_1_0 0.0011746355248003254
+  hidden rotation_2 0 1 0 0.001174635524912955
+  hidden position_2_0 0.00052122077645374
+  hidden rotation_3 0 1 0 0.0005212207764694285
+  hidden position_3_0 0.00011867115727116613
+  hidden rotation_4 1 0 0 0.00011867115631045003
+  hidden position_4_0 3.118709931019216e-07
+  hidden rotation_5 0 1 0 3.1256939416234273e-07
+  hidden position_5_0 4.2046939660422136e-08
+  hidden rotation_6 0.9999999999999999 0 0 4.2146848510894035e-08
+  translation 16.404406167040257 -1.4490860187398462 -0.13781563484105944
+  rotation 0.06201386179162098 0.9980727465762604 -0.0022524403231798554 0.2703613676085142
+  controller "<none>"
+}
+Fence {
+  translation 14.85 -3.62 0
+  rotation 0 0 1 -1.5707996938995747
+  name "fence(1)"
+  poleGap 1.1
+  path [
+    0 0 0
+    0 5.2 0
+  ]
+}
+DEF PIONEER_3AT Pioneer3at {
+  hidden position_0_0 715.4749941383882
+  hidden position_0_1 758.6080190392357
+  hidden position_0_2 715.4736738432838
+  hidden position_0_3 758.6066628691216
+  hidden rotation_7 0.6802957071321818 -0.6802896063128798 -0.2727706039883913 2.6090174520878255
+  hidden rotation_8 -0.7067788111930597 0.7067714036700609 -0.0306250714738294 3.080357472324978
+  hidden rotation_9 0.6803923446449829 -0.6803862411842717 -0.27228811974752226 2.609915698939311
+  hidden rotation_10 -0.7067683374082298 0.7067609283600672 -0.031104780674724313 3.0793989771545043
+  translation 16.521108862582377 -5.185060947331118 -0.002389024072365964
+  rotation -2.4895910352071637e-05 2.4170902755996063e-05 0.9999999993979806 1.5752675416353634
+  controller "project_12_pioneercontroller_1"
+  supervisor TRUE
+  extensionSlot [
+    DEF RGB_cam Solid {
+      translation 0 0 0.42
+      rotation 0 1 0 0
+      children [
+        Camera {
+          translation 0.2 0 0
+          name "CAM_RGB"
+          fieldOfView 1.04719
+          width 600
+          height 600
+        }
+      ]
+      name "solid(2)"
+    }
+    DEF depth_cam Solid {
+      translation 0 0 0.42
+      children [
+        RangeFinder {
+          translation 0.2 0 0
+          rotation -0.5297102114042093 -0.5877042345492806 0.611564244071669 6.67126e-06
+          name "CAM_DEPTH"
+          fieldOfView 1.04719
+          width 600
+          height 600
+          maxRange 10
+        }
+      ]
+      name "solid(1)"
+    }
+    Solid {
+      translation 0.01 0 0.28
+      children [
+        DEF Top Shape {
+          appearance PBRAppearance {
+            baseColor 0.76 0.792 0.35
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.6 0.24 0.01
+          }
+        }
+        DEF Blue_circle Solid {
+          translation 0.29 0 0
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 1
+                roughness 1
+                metalness 0
+              }
+              geometry Sphere {
+                radius 0.04
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+BiscuitBox {
+  translation 3.09119944525509 -3.13348635911081 0.039843039999999996
+  rotation -0.6215576540081393 -0.47679362987334084 0.6215576540081393 -2.2517711340024062
+}
+Ceiling {
+  translation 11.1 -5.85 2.9
+  size 22.2 11.7
+  appearance Roughcast {
+    colorOverride 1 1 0.6
+    textureTransform TextureTransform {
+      scale 10 10
+    }
+  }
+}
+DEF Doornum_1_0 Solid {
+  translation 1.59 -9.4 0.74
+  rotation 9.381857096790023e-07 0.7071067811862364 0.7071067811862364 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/1.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+}
+DEF Doornum_1_1 Solid {
+  translation 0.252547 -10.0478 0.81
+  rotation 0.6776611791705899 0.5199881374825417 0.5199881374825417 1.95044
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/1.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF Doornum_2_0 Solid {
+  translation 9.09287 -5.34285 0.81
+  rotation -0.577349935856137 0.5773509358560258 0.577349935856137 -2.094395307179586
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/2.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(2)"
+}
+DEF Doornum_2_1 Solid {
+  translation 9.30198 -5.30851 0.810011
+  rotation 0.577349935856137 0.5773509358560258 0.577349935856137 2.09439
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/2.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(3)"
+}
+DEF Doornum_3_0 Solid {
+  translation 14.682 -5.30851 0.810011
+  rotation 0.5773489358533613 -0.5773529358529169 -0.5773489358533613 2.0944
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/3.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(4)"
+}
+DEF Doornum_3_1 Solid {
+  translation 14.882 -5.30851 0.810012
+  rotation 0.577349935856137 0.5773509358560258 0.577349935856137 2.09439
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/3.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(5)"
+}
+DEF Doornum_4_0 Solid {
+  translation 16.242 -9.42851 1.02002
+  rotation 1.6952506741258884e-09 0.707108281185553 0.70710528118436 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/4.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(6)"
+}
+DEF Doornum_4_0 Solid {
+  translation 14.902 -9.75851 0.56002
+  rotation -1 1.88117e-06 7.19235e-09 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../door num/4.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.4 0.25
+      }
+    }
+  ]
+  name "solid(7)"
+}
+Hammer {
+  translation 11.681584358505932 -5.989693007253511 0.030663993026256622
+  rotation -0.9945356441913124 -0.07337748651812832 -0.07426033197645568 1.576341206794929
+}
+BathroomSink {
+  translation 7.07324 -3.11 0.822259
+  rotation -0.13052598533533916 1.7318098054302875e-07 0.9914448886106625 3.14159
+}
+WoodenChair {
+  translation 11.04 -6.02 -0.37
+  rotation 0 0 1 4.07987e-06
+}
+Screwdriver {
+  translation 12.105638835484122 -5.8900065286274925 0.011849309868658118
+  rotation 0.0010242633376692683 0.05785992062991597 -0.9983241860584741 0.03547044201906958
+}

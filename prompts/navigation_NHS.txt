@@ -1,0 +1,19 @@
+Name: DoorChecker {
+    description: "This is the agent which checks whether the doors are open or not.", 
+    inputSchema: "Mention as 'None'"
+}
+
+Name: PathPlanner {
+    description: "This is the agent which plan the path using RRT on a given navigational command like 'go to there'.",
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "The final destination of the robot. Don't mention anything else."
+        }
+    }
+}
+
+Name: RobotExecutor {
+    description: "This is the agent which execute the robot.", 
+    inputSchema: "Mention as 'None'"
+}

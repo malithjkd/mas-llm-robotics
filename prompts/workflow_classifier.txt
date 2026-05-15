@@ -1,0 +1,54 @@
+Name: NavigationsupervisorMain {
+    description: "Responsible for navigate from one place to another place", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "Any detail which helps to find the destination position. Give as a complete sentence.Don't mention about errors which occurs"
+        }
+    }
+}
+
+Name: ObjectSearcher {
+    description: "Responsible for search objects.",
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "Object name or any detail about object."
+        }
+    }
+}
+
+Name: ObjectGrabber {
+    description: "Responsible for go to the object and grab it.", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "Object name or any detail about object."
+        }
+    }
+}
+
+Name: QuestionAnswerer {
+    description: "Responsible for answering questions from the user", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "The user question"
+        }
+    }
+}
+
+Name: Speaker {
+    description: "This is the agent which has the speaker. If any detail is needed to inform to the user, robot can use this agent.", 
+    inputSchema: {
+        properties: {
+            type: "string"
+            description: "The details which we have to inform to the user. This should be in natural language."
+        }
+    }
+}
+
+Name: Finisher {
+    description: "This is the agent which end the task plan.", 
+    inputSchema: "Mention as 'None'"
+}

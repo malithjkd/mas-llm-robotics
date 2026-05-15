@@ -1,0 +1,3 @@
+Physics {
+  coulombFriction 1.0  # Increase friction for the wheels
+}

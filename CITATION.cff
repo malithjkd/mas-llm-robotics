@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+title: "AgenticNav: system code"
+authors:
+  - family-names: TBD
+    given-names: TBD
+preferred-citation:
+  type: article
+  title: "AgenticNav: A Hierarchical Multi-Agentic System for LLM-Driven Autonomous Problem-Solving in Robotics"
+  authors:
+    - family-names: TBD
+      given-names: TBD
+  journal: "IEEE Access"
+  year: 2026
