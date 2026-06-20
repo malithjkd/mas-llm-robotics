@@ -8,7 +8,17 @@ preferred-citation:
   type: article
   title: "AgenticNav: A Hierarchical Multi-Agentic System for LLM-Driven Autonomous Problem-Solving in Robotics"
   authors:
-    - family-names: TBD
-      given-names: TBD
+    - family-names: "Samarathunga"
+      given-names: "Kaveesha"
+    - family-names: "Gurusinghe"
+      given-names: "Ranuri"
+    - family-names: "Sivasothynathan"
+      given-names: "Kugesan"
+    - family-names: "Mars"
+      given-names: "Jason"
+    - family-names: "Logeeshan"
+      given-names: "V"
+    - family-names: "Wanigasekara"
+      given-names: "Chathura"
   journal: "IEEE Access"
   year: 2026
