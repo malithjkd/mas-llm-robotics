@@ -151,7 +151,8 @@ Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
   author={Samarathunga, Kaveesha and Gurusinghe, Ranuri and Sivasothynathan, Kugesan and Mars, Jason and Logeeshan, V and Wanigasekara, Chathura},
   journal={IEEE Access},
   year={2026},
-  publisher={IEEE}
+  publisher={IEEE},
+  doi={10.1109/ACCESS.2026.3703330}
 }
 
 ```
