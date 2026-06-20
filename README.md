@@ -1,6 +1,6 @@
 # mas-llm-robotics
 
-[![IEEE Access Paper](https://img.shields.io/badge/IEEE_Access-Paper-00629B.svg)](https://ieeexplore.ieee.org/abstract/document/11559625)
+[![IEEE Access Paper](https://img.shields.io/badge/IEEE_Access-Paper-00629B.svg)](https://doi.org/10.1109/ACCESS.2026.3703330)
 
 Implementation of **AgenticNav**, a Hierarchical Multi-Agentic System
 (MAS) for LLM-driven autonomous problem-solving in robotics.
@@ -140,7 +140,7 @@ python scripts/replay_grade.py --verify-jsons
 
 ## Citation
 
-Please cite the corresponding [IEEE Access paper](https://ieeexplore.ieee.org/abstract/document/11559625) if you use this code.
+Please cite the corresponding [IEEE Access paper](https://doi.org/10.1109/ACCESS.2026.3703330) if you use this code.
 Machine-readable metadata is in [`CITATION.cff`](CITATION.cff).
 
 **BibTeX:**
